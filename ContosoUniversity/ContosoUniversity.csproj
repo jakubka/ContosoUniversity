@@ -134,11 +134,16 @@
     <Compile Include="DataAccessLayer\Entities\Department.cs" />
     <Compile Include="DataAccessLayer\Entities\Enrollment.cs" />
     <Compile Include="DataAccessLayer\Entities\Instructor.cs" />
+    <Compile Include="DataAccessLayer\Entities\LectureHall.cs" />
     <Compile Include="DataAccessLayer\Entities\OfficeAssignment.cs" />
     <Compile Include="DataAccessLayer\Entities\Student.cs" />
     <Compile Include="DataAccessLayer\Migrations\201312040154588_InitialCreate.cs" />
     <Compile Include="DataAccessLayer\Migrations\201312040154588_InitialCreate.Designer.cs">
       <DependentUpon>201312040154588_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Migrations\201312041701371_LectureHallAdd.cs" />
+    <Compile Include="DataAccessLayer\Migrations\201312041701371_LectureHallAdd.Designer.cs">
+      <DependentUpon>201312041701371_LectureHallAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccessLayer\SchoolContext.cs" />
     <Compile Include="DataAccessLayer\Logging\SchoolInterceptorLogging.cs" />
@@ -216,6 +221,9 @@
   <ItemGroup>
     <EmbeddedResource Include="DataAccessLayer\Migrations\201312040154588_InitialCreate.resx">
       <DependentUpon>201312040154588_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataAccessLayer\Migrations\201312041701371_LectureHallAdd.resx">
+      <DependentUpon>201312041701371_LectureHallAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

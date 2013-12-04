@@ -5,7 +5,6 @@ namespace ContosoUniversity.Migrations
 {
     using System;
     using System.Collections.Generic;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
@@ -208,6 +207,10 @@ namespace ContosoUniversity.Migrations
                 }
             }
             context.SaveChanges();
+
+            context.LectureHalls.AddOrUpdate(lh => lh.Name, new LectureHall { Floor = 1, Name = "lecture hall 1" });
+            context.LectureHalls.AddOrUpdate(lh => lh.Name, new LectureHall { Floor = 1, Name = "lecture hall 2" });
+            context.LectureHalls.AddOrUpdate(lh => lh.Name, new LectureHall { Floor = 1, Name = "lecture hall 3" });
         }
 
         void AddOrUpdateInstructor(SchoolContext context, string courseTitle, string instructorName)

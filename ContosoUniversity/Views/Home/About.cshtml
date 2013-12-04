@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ContosoUniversity.ViewModels.EnrollmentDateGroup>
+﻿@model IEnumerable<ContosoUniversity.DataAccessLayer.Entities.LectureHall>
 
 @{
     ViewBag.Title = "Student Body Statistics";
@@ -9,10 +9,10 @@
 <table>
     <tr>
         <th>
-            Enrollment Date
+            Lecture hall name
         </th>
         <th>
-            Students
+            Floor
         </th>
     </tr>
 
@@ -20,10 +20,10 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                @item.Name
             </td>
             <td>
-                @item.StudentCount
+                @item.Floor
             </td>
         </tr>
     }
