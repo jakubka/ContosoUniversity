@@ -1,8 +1,8 @@
-﻿using ContosoUniversity.Models;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using ContosoUniversity.DataAccessLayer.Entities;
 
-namespace ContosoUniversity.DAL
+namespace ContosoUniversity.DataAccessLayer
 {
     public class SchoolContext : DbContext
     {

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ContosoUniversity.Models;
-using ContosoUniversity.DAL;
 using System.Data.Entity.Infrastructure;
+using ContosoUniversity.DataAccessLayer;
+using ContosoUniversity.DataAccessLayer.Entities;
 
 namespace ContosoUniversity.Controllers
 {

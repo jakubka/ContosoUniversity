@@ -130,27 +130,25 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="DAL\SchoolConfiguration.cs" />
-    <Compile Include="DAL\SchoolContext.cs" />
-    <Compile Include="DAL\SchoolInitializer.cs" />
-    <Compile Include="DAL\SchoolInterceptorLogging.cs" />
-    <Compile Include="DAL\SchoolInterceptorTransientErrors.cs" />
+    <Compile Include="DataAccessLayer\Entities\Course.cs" />
+    <Compile Include="DataAccessLayer\Entities\Department.cs" />
+    <Compile Include="DataAccessLayer\Entities\Enrollment.cs" />
+    <Compile Include="DataAccessLayer\Entities\Instructor.cs" />
+    <Compile Include="DataAccessLayer\Entities\OfficeAssignment.cs" />
+    <Compile Include="DataAccessLayer\Entities\Student.cs" />
+    <Compile Include="DataAccessLayer\Migrations\201312040154588_InitialCreate.cs" />
+    <Compile Include="DataAccessLayer\Migrations\201312040154588_InitialCreate.Designer.cs">
+      <DependentUpon>201312040154588_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\SchoolContext.cs" />
+    <Compile Include="DataAccessLayer\Logging\SchoolInterceptorLogging.cs" />
+    <Compile Include="DataAccessLayer\Logging\SchoolInterceptorTransientErrors.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
-    <Compile Include="Migrations\201312032351109_InitialCreate.cs" />
-    <Compile Include="Migrations\201312032351109_InitialCreate.Designer.cs">
-      <DependentUpon>201312032351109_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Course.cs" />
-    <Compile Include="Models\Department.cs" />
-    <Compile Include="Models\Enrollment.cs" />
-    <Compile Include="Models\Instructor.cs" />
-    <Compile Include="Models\OfficeAssignment.cs" />
-    <Compile Include="Models\Student.cs" />
+    <Compile Include="DataAccessLayer\Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AssignedCourseData.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroupcs.cs" />
@@ -217,8 +215,8 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201312032351109_InitialCreate.resx">
-      <DependentUpon>201312032351109_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="DataAccessLayer\Migrations\201312040154588_InitialCreate.resx">
+      <DependentUpon>201312040154588_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

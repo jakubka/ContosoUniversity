@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace ContosoUniversity
+namespace ContosoUniversity.App_Start
 {
     public class BundleConfig
     {

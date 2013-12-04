@@ -1,7 +1,8 @@
+using ContosoUniversity.DataAccessLayer;
+using ContosoUniversity.DataAccessLayer.Entities;
+
 namespace ContosoUniversity.Migrations
 {
-    using ContosoUniversity.Models;
-    using ContosoUniversity.DAL;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -13,6 +14,7 @@ namespace ContosoUniversity.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            MigrationsDirectory = "DataAccessLayer\\Migrations";
         }
 
         protected override void Seed(SchoolContext context)
